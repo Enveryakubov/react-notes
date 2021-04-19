@@ -5,9 +5,73 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: rgb(209, 212, 226); */
+  background-color: #999;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  background-color: white;
+  margin-top: 150px;
+  border-radius: 5px;
+  padding: 5px 5px;
+  margin-bottom: 50px;
+}
+.noteForm{
+  margin-bottom: 20px;
+}
+.inputField{
+  height:30px;
+  width:80%;
+  border-radius:5px 0px 0px 5px;
+  border:none;
+  background-color:#ddd;
+  font-size:20px; 
+  padding-left:10px;
+
+}
+.note{
+  margin: auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.note:hover{
+  background-color: #ddd;
+}
+.deleteBtn{
+  height:34px;
+  width:120px;
+  background-color:#fff;
+  border-radius:5px; 
+  border:none; 
+  font-size:15px;
+  color:red;
+}
+.deleteBtn:hover{
+  background-color: rgb(250, 250, 204);
+  color: rgb(139, 2, 2);
+  transition:.5s;
+}
+.icons:hover{
+  transform: scale(1.4);
+  transition: 0.6 ease-in-out;
+}
+
+@media screen and (max-width: 1200px)  {
+  .container{
+    width: 95%;
+  }
+  .inputField{
+    width: 60%;
+  }
+
 }
